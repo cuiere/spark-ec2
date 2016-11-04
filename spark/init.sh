@@ -119,6 +119,7 @@ else
       if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.2.1-bin-hadoop1.tgz
       elif [[ "$HADOOP_MAJOR_VERSION" == "2" ]]; then
+      // Replace with our prebuild --> s3 path tgz
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.2.1-bin-cdh4.tgz
       else
         wget http://s3.amazonaws.com/spark-related-packages/spark-1.2.1-bin-hadoop2.4.tgz
